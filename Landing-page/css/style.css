@@ -1,0 +1,331 @@
+:root {
+  --blue: #0f71f2;
+  --red: #cc070b;
+  --yellow: #f2c80c;
+  --white: #fcfcfc;
+  --light: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+body {
+  font-family: "poppins";
+  background-image: url("col1.jpg");
+  min-height: 2000px;
+}
+/* ============Navbar================== */
+nav {
+  box-shadow: 0 0.3px 3px rgb(76, 76, 76);
+  background-color: var(--white);
+}
+
+#nav-logo {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--blue);
+}
+
+#img-logo {
+  align-items: center;
+}
+
+span {
+  color: var(--red);
+}
+
+ul li #nav-link {
+  color: var(--blue);
+}
+
+ul li #nav-link::after {
+  content: "";
+  display: block;
+  border-bottom: 2.6px solid var(--red);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+ul li #nav-link:hover::after {
+  transform: scaleX(0.2);
+}
+
+/* ------------- section ------------ */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vh;
+  background-image: url("../picture/img-section.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* ---------------main------------- */
+main {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* ----------------fitur-----------------*/
+h2 {
+  color: var(--blue);
+}
+
+.box-misi {
+  background-color: var(--light);
+  margin: 5px;
+}
+
+.icon-fitur {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+
+.box-misi:hover {
+  box-shadow: 0px 3px 10px rgb(76, 76, 76);
+  transition: 0.2s;
+  transform: scale(1.01);
+}
+
+/* ------------------------populer------------------ */
+.content {
+  box-sizing: border-box;
+  padding-left: 2px;
+  border-right: 1px solid var(--red);
+}
+
+.content:hover {
+  background-color: var(--yellow);
+  transform: scaleX(1);
+  transition: 3s;
+}
+
+.btn-content {
+  border: none;
+  background-color: var(--red);
+  font-weight: bold;
+  color: var(--white);
+  padding: 3px 20px 3px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-content:hover {
+  opacity: 75%;
+}
+
+.icon-content {
+  font-weight: 100;
+  font-size: x-small;
+  margin-left: 4px;
+}
+
+/* -------------------events---------------- */
+.con-events {
+  background-color: var(--blue);
+  margin-top: 40px;
+}
+
+.text-events {
+  color: var(--white);
+}
+
+.box-events {
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  background-color: rgba(30, 24, 10, 0.1);
+  margin: 10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#p {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.submit-events {
+  background-color: var(--white);
+  margin-top: 20px;
+  /* border: 1.5px solid var(--red); */
+  padding-top: 10px;
+}
+
+#judul-registrasi {
+  color: var(--red);
+}
+
+form {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#t {
+  font-weight: 100;
+  font-size: small;
+}
+
+#btn-submit {
+  background-color: var(--red);
+  color: var(--white);
+  margin: 0 0 30px 0;
+  /* right: 50%; */
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  border: none;
+}
+
+/* ----------------trainner ----------- */
+.trainer:hover {
+  box-shadow: 0px 3px 10px rgba(76, 76, 76, 0.5);
+  transition: 0.2s;
+  transform: scale(1.01);
+}
+
+#contact-trainer {
+  color: var(--red);
+}
+
+#contact-trainer:hover {
+  color: var(--blue);
+}
+
+h5 {
+  padding-top: 10px;
+}
+
+#c-trainer {
+  font-weight: 100;
+  font-size: small;
+}
+
+#x-trainer {
+  font-weight: 100;
+  font-size: medium;
+}
+
+/* ======= responsive hp =========== */
+@media only screen and (max-width: 766px) {
+  .frame {
+    display: block;
+  }
+
+  .trainer {
+    background-color: var(--light);
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #contact-trainer {
+    color: var(--red);
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #teks-trainer {
+    margin-top: 20px;
+  }
+
+  .contact{
+    justify-content: center;
+  }
+}
+
+/* =========tablet----------- */
+@media only screen and (min-width: 767px) {
+  .frame {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .trainer {
+    background-color: var(--light);
+    width: 45%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #contact-trainer {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  #teks-trainer {
+    margin-top: 20px;
+  }
+}
+
+/* ============pc------------- */
+@media only screen and (min-width: 992px) {
+  .frame {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trainer {
+    background-color: var(--light);
+    width: 20%;
+    text-align: center;
+  }
+
+  #contact-trainer {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+
+/* ==========contact------------ */
+.con-contact {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.contact {
+  /* display: flex; */
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  /* align-items: flex-start; */
+}
+
+#h3-contact {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+#h4 {
+  color: var(--white);
+  text-align: start;
+  padding-top: 0;
+}
